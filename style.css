@@ -1,0 +1,278 @@
+/**
+ * Theme Name:  Simppeli Child
+ * Theme URI:   https://foxland.fi/downloads/toivo
+ * Description: Blank child theme for Simppeli
+ * Version:     1.0.0
+ * Author:      Sami Keijonen
+ * Author URI:  https://foxland.fi
+ * Text Domain: simppeli-child
+ * Domain Path: /languages/
+ * Tags:        blue, white, light, one-column, two-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template:    simppeli
+ */
+
+/**
+ * Parent theme styles are loaded automatically. So there is no need to use @import rule.
+ *
+ */
+ /* Import Fonts */
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('OpenSans-Light-webfont.eot');
+    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bitter';
+    src: url('Bitter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: 700;
+
+}
+
+
+/* Font Changes */
+
+h1,h2,h3,h4,h5,h6, h1:visited,h2:visited,h3:visited,h4:visited {
+font-family: 'bitter',serif;
+font-weight: 700;
+color:#2E81AA;
+margin: 1.25% 0 1.25% 0;
+}
+h5,h6, h5:visited, h6:visited {
+    color: #183054;
+}
+
+body {
+    font-family:'open_sanslight',serif;
+    color:#183054;
+}
+
+hr {
+    border-top: 1px dotted #183054;
+    background-color:transparent;
+}
+
+P {
+    color:#183054;
+    font-size: 0.75em;
+}
+a:visited{
+    color:#183054;
+}
+a {
+    font-family: 'open_sansregular',serif;
+    color:#2E81AA;
+    text-decoration:none;
+}
+/* Navigation Changes */
+.site-title a {
+    font-family: 'bitter',serif;
+    color:#183054;
+}
+
+.site-branding {
+    margin:2.5% 0;
+}
+
+.site-header {
+    border-bottom: 1px dotted #183054;
+    margin-bottom:1.25%;
+}
+
+.main-navigation {
+    padding:0 0 2.5% 0;
+}
+.current-menu-item>a {
+    border-bottom:5px solid #183053;
+}
+
+/* Footer Changes */
+.site-info {
+    padding: 0 0 2.5% 0;
+    font-size: 1rem;
+}
+
+/* Content Style Changes */
+
+.hentry {
+    border-bottom: 1px dotted #183054;
+    padding-bottom:2.5%;
+}
+.page .entry, .page .hentry, .single .entry, .single .hentry {
+    margin-bottom: 5%;
+    padding-bottom:2.5%;
+}
+
+.entry-title + a {
+    font-family:'bitter',serif;
+    font-size:
+}
+
+.entry-meta {
+    font-size: 0.75em;
+    text-transform: none;
+}
+
+
+.entry-content p:first-of-type {
+    font-size: 1.25rem;
+}
+
+.entry-footer, .entry-footer-links, .entry-footer>.entry-footer-links, .entry-meta {
+    text-transform: none;
+}
+
+
+.header-img {
+    margin-top:2.5%;
+}
+
+.comments-title {
+    font-size:1.25em;
+}
+/* Bad code - find a way to take this out of the template asap */
+.post-navigation {
+    display: none;
+}
+
+/* short code post plugin */
+.more-link {
+    color:#2E81AA;
+    font-size:0.75em;
+    font-style: italic;
+}
+
+.blog-link-title {
+    color:#183054;
+}
+
+.excerpt {
+    font-size: 0.75em;
+}
+/* Forms */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: transparent;
+	border: 1px solid;
+    border-color: #183054;
+    border-radius:3px;
+    padding: .6em 1em;
+    margin-top:10px;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #A4D5FF;
+	color: #183054;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	background: #A4D5FF;
+	color: #183054;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="reset"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+	border: 1px dotted #183054;
+	display: block;
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+}
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="password"]:focus,
+input[type="reset"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus,
+select:focus {
+	border-style: solid;
+	color: #183054;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+	width: 100%;
+}
+
+.search-submit {
+	margin-bottom: 1.5em;
+}
+
+/* Padding Changes */
+
+.mb- {
+    margin-bottom:0.75em;
+}
+
+.jump:before {
+   content: "";
+   display: block;
+   height: 50px;
+   margin: -30px 0 0;
+}
+
+figure, figurecaption, .smallertext {
+font-size:0.75em;
+}
